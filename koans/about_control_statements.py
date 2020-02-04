@@ -75,9 +75,9 @@ class AboutControlStatements(Koan):
             result.append("Contestant: '" + knight +
                           "'   Answer: '" + answer + "'")
 
-        for num in range(0,len(round_table)):
-            text = "Contestant: '" + round_table[num][0] + "'   Answer: '" + round_table[num][1]  + "'"
-
+        # for num in range(0,len(round_table)):
+        #     text = "Contestant: '" + round_table[num][0] + "'   Answer: '" + round_table[num][1]  + "'"
+        text = r'Gr'
         self.assertRegex(result[2], text)
 
         self.assertNotRegex(result[0], text)
